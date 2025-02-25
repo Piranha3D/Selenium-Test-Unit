@@ -12,10 +12,7 @@ async function saucedemoLoginTest() {
         await driver.get("https://saucedemo.com");
 
         await driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        await driver
-            .findElement(By.xpath("//input[@id='password']"))
-            .sendKeys("secret_sauce");
-
+        await driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
         await driver.findElement(By.name("login-button")).click();
 
         // Add to cart

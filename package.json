@@ -1,9 +1,9 @@
 {
-  "name": "seleniumdigital",
+  "name": "seleniumtestunit",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/saucedemo-mocha-hooks.js -t 0",
+    "test": "mocha saucedemo-hooks.js -t 0",
     "test:all": "mocha",
     "checkout": "mocha test/checkout/*.js"
   },
